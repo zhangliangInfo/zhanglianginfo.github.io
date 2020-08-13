@@ -8,8 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>我的笔记-zhangliang的blog</title>
-  <meta name="description" content="用于记录日常工作学习中的点滴" />
+  <title>Vscode配置信息 &middot; 我的笔记-zhangliang的blog</title>
+  <meta name="description" content="" />
 
   
   <link type="text/css" rel="stylesheet" href="https://zhanglianginfo.github.io/css/print.css" media="print">
@@ -24,7 +24,6 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://zhanglianginfo.github.io/index.xml" rel="alternate" type="application/rss+xml" title="我的笔记-zhangliang的blog" />
   
 </head>
 
@@ -50,30 +49,38 @@
 </aside>
 
     <main class="content container">
-    <div class="posts">
-<article class="post">
-  <h1 class="post-title">
-    <a href="https://zhanglianginfo.github.io/article/vscode/">Vscode配置信息</a>
-  </h1>
-  <time datetime="2020-08-13T15:08:36&#43;0800" class="post-date">Thu, Aug 13, 2020</time>
-  针对开发过程中比较实用的一些vscode配置信息
-  
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="https://zhanglianginfo.github.io/article/hugo/">用Hugo搭建blog</a>
-  </h1>
-  <time datetime="2020-08-12T17:47:52&#43;0800" class="post-date">Wed, Aug 12, 2020</time>
-  记录如何使用hugo搭建blog，并部署到github;
-  
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="https://zhanglianginfo.github.io/about/">关于此blog的目的</a>
-  </h1>
-  <time datetime="2020-08-12T16:49:07&#43;0800" class="post-date">Wed, Aug 12, 2020</time>
-  主要用于记录自己日常工作生活中的点滴积累
-  
-</article>
+    <div class="post">
+  <h1>Vscode配置信息</h1>
+  <time datetime=2020-08-13T15:08:36&#43;0800 class="post-date">Thu, Aug 13, 2020</time>
+  <h4 id="一-中文配置">一、 中文配置</h4>
+<ol>
+<li>实用快捷键Ctrl + Shift + P，打开命令窗口，输入Configure Display Language，选择zh-cn</li>
+<li>这时按照提示点击restart重启编辑器，可以是界面并没有变成中文界面，这时因为vscode默认没有安装中文包</li>
+<li>在扩展应用中搜索：chinese，点击安装，然后重启，就可以看到界面变成了中文界面</li>
+</ol>
+<h4 id="二-git配置">二、 git配置</h4>
+<p>vscode中源代码管理中若提示当前没有源代码管理程序进行注册，则有可能是<strong>git路径配置错误</strong>：</p>
+<ol>
+<li>
+<p>查看当前git path</p>
+<blockquote>
+<p>$ where git</p>
+</blockquote>
+</li>
+<li>
+<p>点击文件&gt; 首选项 &gt; 设置或使用Ctrl + ,快捷键，搜索git.path, 点击&quot;在settings.json&quot;中编辑，用户设置处，添加或修改&quot;git.path&quot;的属性值，保存；</p>
+</li>
+<li>
+<p>这时打开git项目之后，会自动关联，每次删除修改都会在源代码管理里面显示修改的内容</p>
+</li>
+<li>
+<p>推荐GitLens插件，可以在代码中显示每一行的修改信息(author, date, comment)</p>
+</li>
+</ol>
+
 </div>
+
+
     </main>
 
     
