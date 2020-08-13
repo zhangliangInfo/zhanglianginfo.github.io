@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>用Hugo搭建blog &middot; 我的笔记-zhangliang的blog</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://zhanglianginfo.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://zhanglianginfo.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://zhanglianginfo.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://zhanglianginfo.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://zhanglianginfo.github.io/"><h1>琐碎笔记</h1></a>
+      <p class="lead">
+       用于记录日常工作学习中的点滴 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://zhanglianginfo.github.io/">Home</a> </li>
+        <li><a href="/javascript/"> Javscript </a></li><li><a href="/typescript/"> TypeScript </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>用Hugo搭建blog</h1>
+  <time datetime=2020-08-12T17:47:52&#43;0800 class="post-date">Wed, Aug 12, 2020</time>
+  <blockquote>
+<p>今天使用hugo搭建了一套blog系统，用来代替记事本功能，来记录一下琐碎的工作学习的过程：</p>
+</blockquote>
+<h2 id="1关于项目安装配置">1.关于项目安装配置</h2>
+<p>由于我的是windows系统，先说下windows下的配置安装：</p>
+<ul>
+<li>首先是下载<a href="https://gohugo.io/">hugo</a>对应的版本，<a href="https://github.com/gohugoio/hugo/releases">传送门</a></li>
+</ul>
+<ul>
+<li>创建工作目录</li>
+</ul>
+<blockquote>
+<p>$:cd D:<br>
+$ mkdir hugo<br>
+$ cd hugo
+$ mkdir bin</p>
+</blockquote>
+<ul>
+<li>将hugo_0.74.3_Windows-64bit.zip下载文件里的hugo.exe文件复制到bin目录下</li>
+<li>配置环境变量：D:/hugo/bin/hugo.exe</li>
+</ul>
+<blockquote>
+<p>$:hugo new mysite</p>
+</blockquote>
+<ul>
+<li>hugo会自动生成项目,目录结构如下：</li>
+</ul>
+<blockquote>
+<p>▸ archetypes/<br>
+▸ content/<br>
+▸ layouts/<br>
+▸ static/<br>
+config.toml</p>
+</blockquote>
+<ul>
+<li>进入到项目cd mysite</li>
+<li>通过hugo new xxx.md可以在content目录内创建一个md文件，语法为markdown语法</li>
+</ul>
+<blockquote>
+<p>$ cd thems<br>
+$ git clone <a href="https://github.com/spf13/hyde.git">https://github.com/spf13/hyde.git</a><br>
+$ hugo server &ndash;theme=hyde &ndash;buildDrafts启动项目</p>
+</blockquote>
+<ul>
+<li>浏览器打开http://localhost:1313可以查看效果</li>
+</ul>
+<hr>
+<h2 id="2如何部署到github-pages">2.如何部署到github Pages</h2>
+<ul>
+<li>首先在github上创建一个Repository： example.github.io</li>
+<li>在站点根目录设置项目链接</li>
+</ul>
+<blockquote>
+<p>$ hugo &ndash;theme=hyde &ndash;baseUrl=&quot;http://example.github.io&rdquo;</p>
+</blockquote>
+<ul>
+<li>所有静态页都会生成到public目录下，将public目录下所有文件提交到创建的github仓库中即可</li>
+<li>执行hugo命令打包html到public</li>
+</ul>
+<blockquote>
+<p>$ hugo -t hyde<!-- raw HTML omitted --></p>
+</blockquote>
+<p>若发现没有生成html，将md文件头部的draft=true删除或改为false, 或者在上述命令后加 &ndash;buildDrafts | -D(将生成被标记为草稿的页面)</p>
+<blockquote>
+<p>$ cd public<br>
+$ git init<br>
+$ git remote add origin <a href="https://github.com/example/example/github.io.git">https://github.com/example/example/github.io.git</a><br>
+$ git add &ndash;all
+$ git commit -m &lsquo;initial commit&rsquo;<br>
+$ git push -u origin master(若提交失败，可执行git push -f origin master)</p>
+</blockquote>
+<ul>
+<li>推送成功后，那么恭喜你，可以直接访问自己的blog：http://example.github.io</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

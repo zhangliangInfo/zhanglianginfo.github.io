@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我的笔记-zhangliang的blog</title>
+    <link>https://zhanglianginfo.github.io/</link>
+    <description>Recent content on 我的笔记-zhangliang的blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Aug 2020 17:47:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://zhanglianginfo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用Hugo搭建blog</title>
+      <link>https://zhanglianginfo.github.io/article/hugo/</link>
+      <pubDate>Wed, 12 Aug 2020 17:47:52 +0800</pubDate>
+      
+      <guid>https://zhanglianginfo.github.io/article/hugo/</guid>
+      <description>记录如何使用hugo搭建blog，并部署到github;</description>
+    </item>
+    
+    <item>
+      <title>关于此blog的目的</title>
+      <link>https://zhanglianginfo.github.io/about/</link>
+      <pubDate>Wed, 12 Aug 2020 16:49:07 +0800</pubDate>
+      
+      <guid>https://zhanglianginfo.github.io/about/</guid>
+      <description>主要用于记录自己日常工作生活中的点滴积累</description>
+    </item>
+    
+  </channel>
+</rss>
