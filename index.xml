@@ -6,10 +6,19 @@
     <description>Recent content on 我的笔记-zhangliang的blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2020 15:08:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 15:16:10 +0800</lastBuildDate>
     
 	<atom:link href="https://zhanglianginfo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>实现javascript 深拷贝和浅拷贝的方法</title>
+      <link>https://zhanglianginfo.github.io/javascript/1/</link>
+      <pubDate>Tue, 18 Aug 2020 15:16:10 +0800</pubDate>
+      
+      <guid>https://zhanglianginfo.github.io/javascript/1/</guid>
+      <description>记录实现js深拷贝和浅拷贝的方法</description>
+    </item>
     
     <item>
       <title>Vscode配置信息</title>
